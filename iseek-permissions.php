@@ -21,6 +21,9 @@ function iseek_set_permissions(){
 	// get the the role object
 	$role_object = get_role( 'editor' );
 
+	if ( !$role_object )
+		return;
+
 	// List capabilities to assign
 	$caps = array(
 		//General
