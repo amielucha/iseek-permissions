@@ -15,7 +15,7 @@ function iseek_change_role_name(){
 	$wp_roles->roles['editor']['name'] = 'Owner';
 	$wp_roles->role_names['editor'] = 'Owner';
 }
-add_action('init', 'iseek_change_role_name');
+add_action('wp_dashboard_setup', 'iseek_change_role_name');
 
 function iseek_set_permissions(){
 	// get the the role object
@@ -118,4 +118,4 @@ function iseek_set_permissions(){
 	foreach ( $caps as $cap )
 		$role_object->add_cap( $cap );
 }
-add_action('init', 'iseek_set_permissions');
+add_action('wp_dashboard_setup', 'iseek_set_permissions');
