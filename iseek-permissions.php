@@ -36,6 +36,11 @@ function iseek_set_permissions(){
 
 		// Users
 		"edit_users",
+		"create_users",
+		"list_users",
+		"promote_users",
+		"remove_users",
+		"delete_users",
 
 		// WooCommerce
 		"manage_categories",
