@@ -112,7 +112,8 @@ function iseek_set_permissions(){
 		"manage_shop_webhook_terms",
 		"edit_shop_webhook_terms",
 		"delete_shop_webhook_terms",
-		"assign_shop_webhook_terms"
+		"assign_shop_webhook_terms",
+		"gform_full_access"
 	);
 
 	foreach ( $caps as $cap )
